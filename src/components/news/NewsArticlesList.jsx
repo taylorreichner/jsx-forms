@@ -6,7 +6,9 @@ const NewsArticlesList = ({ articles }) => (
     <ul aria-label="articles">
         {articles.map((article) => (
             <li key={`${article.title}-${article.description}`}>
-                <Article title={article.title} text={article.text} link={article.link}/>
+                <Article title={article.title} 
+                text={article.text} 
+                link={article.link}/>
             </li>
         ))}
     </ul>
@@ -19,7 +21,7 @@ NewsArticlesList.propTypes = {
             text: PropTypes.string.isRequired,
             link: PropTypes.string.isRequired,
         })
-    )
+    ).isRequired,
 }
 
 export default NewsArticlesList;
