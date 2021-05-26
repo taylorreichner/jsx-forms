@@ -2,15 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Controls = ({ handleSearchInput, onSubmit, inputValue }) => (
-  <form onSubmit={onSubmit}>
-    <label htmlFor="character-name">Character Name</label>
+  <form onSubmit={onSubmit} aria-label="form-input">
+    <label htmlFor="article-search">Search Articles</label>
     <input
-      id="character-name"
+      aria-label="input-box"
       type="text"
       value={inputValue}
       onChange={handleSearchInput}
     />
-    <button aria-label="find-quotes">Submit</button>
+    <button aria-label="find-articles">Submit</button>
   </form>
 );
 

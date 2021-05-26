@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`news Container displays a list of news 1`] = `
+<ul
+  aria-label="articles"
+>
+  <li>
+    <figure>
+      <figcaption>
+        trees
+      </figcaption>
+      <figcaption>
+        tall trees
+      </figcaption>
+      <figcaption>
+        taylor
+      </figcaption>
+    </figure>
+  </li>
+</ul>
+`;
+
+exports[`news Container displays a list of news 2`] = `
+<button
+  aria-label="find-articles"
+>
+  Submit
+</button>
+`;
+
+exports[`news Container displays a list of news 3`] = `
+<form
+  aria-label="form-input"
+>
+  <label
+    for="article-search"
+  >
+    Search Articles
+  </label>
+  <input
+    aria-label="input-box"
+    type="text"
+    value=""
+  />
+  <button
+    aria-label="find-articles"
+  >
+    Submit
+  </button>
+</form>
+`;
